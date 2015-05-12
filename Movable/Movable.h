@@ -6,6 +6,8 @@ class Movable{
     Movable(location myLoc, DERECTION dir, COLLISION col);
     ~Movalbe(void);
   void public update();
-  void public setCollision(COLLISION col){this->col = col;};
-  void public setLocation(location myLoc){this->myLoc = myLoc;};
+  inline public getX(myLoc){return myLoc.x;};
+  inline public getY(myLoc){return myLoc.y;};
+  inline public setCollision(COLLISION col){this->col = col;};
+  inline public setLocation(location myLoc){this->myLoc = myLoc;};
 };
