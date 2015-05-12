@@ -16,3 +16,9 @@ char loot = "@";
 void public get_health;
 void public get_strength;
 void public get_armor;
+
+struct location{
+  int x;
+  int y;
+  location(int x, int y,)(this->x=x; this->y=y;);
+};
